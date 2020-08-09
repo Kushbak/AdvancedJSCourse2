@@ -1,4 +1,5 @@
 // import checkForNum from './checkForNum'
+import { postData } from '../services/requests'
 
 const forms = (state) => {
     const form = document.querySelectorAll('form');
@@ -14,15 +15,6 @@ const forms = (state) => {
         spinner: 'assets/img/spinner.gif',
         ok: 'assets/img/ok.png',
         fail: 'assets/img/fail.png'
-    }
-
-    const postData = async (url, data) => { 
-        let res = await fetch(url, {
-            method: 'POST',
-            body: data
-        });
-
-        return await res.text();
     }
 
     const clearInputs = () => {
