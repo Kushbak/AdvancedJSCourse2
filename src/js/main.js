@@ -10,6 +10,7 @@ import pictureSize from './modules/pictureSize';
 import accordion from './modules/accordion';
 import burger from './modules/burger';
 import scrolling from './modules/scrolling';
+import drop from './modules/drop';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -31,4 +32,5 @@ window.addEventListener('DOMContentLoaded', () => {
     // TODO: Сделать открытие аккордеона только одного элемента, остальным автозакрытие 
     burger('.burger-menu', '.burger');
     scrolling('.pageup');
+    drop();
 })
